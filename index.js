@@ -13,7 +13,7 @@ function retrieveEmployeeInformation() {
 function addNewElementAsLi() {
   const temp = document.createElement("li");
   temp.innerHTML = retrieveEmployeeInformation();
-  document.querySelector("ul.employee-list").append(temp);
+  (document.querySelector("ul.employee-list")).append(temp);
 }
 
 function addNewLiOnClick() {

@@ -14,7 +14,7 @@ function addNewElementAsLi() {
   const newLi = document.createElement("li");
   const ulEL = document.querySelector("ul.employee-list");
   newLi.innerHTML = retrieveEmployeeInformation();
-  ulEL.append(temp);
+  ulEL.append(newLi);
 }
 
 function addNewLiOnClick() {

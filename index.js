@@ -11,9 +11,10 @@ function retrieveEmployeeInformation() {
 }
 
 function addNewElementAsLi() {
-  const temp = document.createElement("li");
-  temp.innerHTML = retrieveEmployeeInformation();
-  (document.querySelector("ul.employee-list")).append(temp);
+  const newLi = document.createElement("li");
+  const ulEL = document.querySelector("ul.employee-list");
+  newLi.innerHTML = retrieveEmployeeInformation();
+  ulEL.append(temp);
 }
 
 function addNewLiOnClick() {
